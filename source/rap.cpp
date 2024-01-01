@@ -27,18 +27,18 @@ void rap::datlaiphim() {
     Time max;
     max = homnay;
     for (int i = 0; i < 10; i++) {
-        if (homnay > danhsachphong[i][0][0].suat[0].getthoigianchieu()) {
+        if (homnay > danhsachphong[i][0][0].suat.getthoigianchieu()) {
             count++;
         }
-        if (danhsachphong[i][0][0].suat[0].getthoigianchieu() > max) {
-            max = danhsachphong[i][0][0].suat[0].getthoigianchieu();
+        if (danhsachphong[i][0][0].suat.getthoigianchieu() > max) {
+            max = danhsachphong[i][0][0].suat.getthoigianchieu();
         }
 
     }
     for (int i = 0; i < count; i++) {
         for (int j = 0; j < 3; j++) {
             for (int k = 0; k < 8; k++) {
-                danhsachphong[i][j][k].suat[k].getthoigianchieu().congngay(max, (i + 1));
+                danhsachphong[i][j][k].suat.getthoigianchieu().congngay(max, (i + 1));
             }
         }
     }
@@ -47,7 +47,7 @@ string rap::getidphong(suatchieu sc) {
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 3; j++) {
             for (int k = 0; k < 8; k++) {
-                if (sc == danhsachphong[i][j][k].suat[k]) {
+                if (sc == danhsachphong[i][j][k].suat) {
                     return danhsachphong[i][j][k].getidphong();
                 }
             }

@@ -3,27 +3,29 @@
 class ve
 {
 private:
+
     string id;
     int giave;
     now ngaydat;
-    string bap;
-    string nuoc;
-    suatchieu sc;
+    string bapnuoc;
+    string tenphim;
+    Time ngaychieu;
     string ghengoi;
+    string loaighe;
 public:
     ve();
-    ve(now, string, string, suatchieu, string);
+    ve(int, now, string, string, Time, string, string);
     ~ve();
     string getid();
     string gettenphim();
     int getgiave();
+    string getloaighe();
+    Time getngaychieu();
+    string getbapnuoc();
     Time getngayxem();
-    int tinh_tien_bap(const string&);
-    int tinh_tien_nuoc(const string&);
     now getngaydat();
     string getbap();
     string getnuoc();
-    suatchieu getsc();
     string getghengoi();
     void setid(string);
     void setgiave(int);
@@ -31,11 +33,9 @@ public:
     void setngaydat(Time);
     void setbap(string);
     void setnuoc(string);
-    void setsc(suatchieu);
     void setghengoi(string);
     bool operator==(ve);
-    void writeve(string);
     friend ostream& operator<<(ostream&, ve);
-    ve operator=(ve);
+    void operator=(ve);
     friend class maychu;
 };

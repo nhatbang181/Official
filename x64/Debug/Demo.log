@@ -1,0 +1,115 @@
+﻿  test.cpp
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(54,56): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(57,129): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(57,49): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(64,35): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(72,133): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(72,52): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(109,26): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(143,184): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(228,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(242,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(246,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(301,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(307,58): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(311,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(332,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(336,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(341,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(347,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(352,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(615,120): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(615,101): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(627,124): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(627,103): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(668,58): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(680,130): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(680,109): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(685,126): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(685,105): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(692,131): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(692,110): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(700,126): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(700,105): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(721,121): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(721,100): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(730,121): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(730,100): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\BANG\source\repos\Demo\Demo\test.cpp(363,9): warning C4101: 'sizeSelected': unreferenced local variable
+  Demo.vcxproj -> C:\Users\BANG\source\repos\Demo\x64\Debug\Demo.exe

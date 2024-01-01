@@ -22,60 +22,32 @@ int maychu::getsophim()
 {
     return sophim;
 }
-void maychu::themve(ve v)
-{
-    ////// tao ve
-    if (sove == 0)
-    {
-        danhsachve = new ve[sove + 1];
-        *(danhsachve + sove) = v;
-        sove++;
-    }
-    else
-    {
-        ve* tmp = new ve[sove];
-        for (int i = 0; i < sove; i++)
-        {
-            *(tmp + i) = *(danhsachve + i);
-        }
-        delete[] danhsachve;
-        danhsachve = new ve[sove + 1];
-        for (int i = 0; i < sove; i++)
-        {
-            *(danhsachve + i) = *(tmp + i);
-        }
-        *(danhsachve + sove) = v;
-        delete[] tmp;
-        sove++;
-    }
 
-}
-void maychu::updatedanhsachve(string name_file) {
-    now n;
-    for (int i = 0; i < sove; i++) {
-        if ((*(danhsachve + i)).getsc().getthoigianchieu().getthang() < n.getthang() || (*(danhsachve + i)).getsc().getthoigianchieu().getngay() < n.getngay() ||
-            (*(danhsachve + i)).getsc().getthoigianchieu().getgio() < n.getgio() || ((*(danhsachve + i)).getsc().getthoigianchieu().getgio() == n.getgio() && (*(danhsachve + i)).getsc().getthoigianchieu().getphut() + 15 < n.getphut())
-            )
-        {
-            xoave(*(danhsachve + i));
-        }
-    }
-    ofstream o;
-    o.open(name_file, ios::trunc);
-    if (!o.is_open()) return;
-    for (int i = 0; i < sove; i++) {
-        o << (*(danhsachve + i)).id << endl;
-        o << (*(danhsachve + i)).sc.getidphim() << endl;
-        o << (*(danhsachve + i)).giave << endl;
-        o << (*(danhsachve + i)).sc.getthoigianchieu();
-        o << (*(danhsachve + i)).ngaydat << endl;
-        o << (*(danhsachve + i)).bap << endl;
-        o << (*(danhsachve + i)).nuoc << endl;
-        o << (*(danhsachve + i)).ghengoi << endl;
-    }
-    o.close();
-
-}
+//void maychu::updatedanhsachve(string name_file) {
+//    now n;
+//    for (int i = 0; i < sove; i++) {
+//        if ((*(danhsachve + i)).getsc().getthoigianchieu().getthang() < n.getthang() || (*(danhsachve + i)).getsc().getthoigianchieu().getngay() < n.getngay() ||
+//            (*(danhsachve + i)).getsc().getthoigianchieu().getgio() < n.getgio() || ((*(danhsachve + i)).getsc().getthoigianchieu().getgio() == n.getgio() && (*(danhsachve + i)).getsc().getthoigianchieu().getphut() + 15 < n.getphut())
+//            )
+//        {
+//            xoave(*(danhsachve + i));
+//        }
+//    }
+//    ofstream o;
+//    o.open(name_file, ios::trunc);
+//    if (!o.is_open()) return;
+//    for (int i = 0; i < sove; i++) {
+//        o << (*(danhsachve + i)).id << endl;
+//        o << (*(danhsachve + i)).sc.getidphim() << endl;
+//        o << (*(danhsachve + i)).giave << endl;
+//        o << (*(danhsachve + i)).sc.getthoigianchieu();
+//        o << (*(danhsachve + i)).ngaydat << endl;
+//        o << (*(danhsachve + i)).bapnuoc << endl;
+//        o << (*(danhsachve + i)).ghengoi << endl;
+//    }
+//    o.close();
+//
+//}
 void maychu::xoaphim(phim p)
 {
     if (sophim != 0)
@@ -121,7 +93,6 @@ void maychu::updatedanhsachphim(string name_file) {
     if (!o.is_open()) return;
     for (int i = 0; i < sophim; i++) {
         o << (*(danhsachphim + i)).gettenphim() << endl;
-        o << (*(danhsachphim + i)).getdaodien() << endl;
         o << (*(danhsachphim + i)).gettheloai() << endl;
         o << (*(danhsachphim + i)).getkhoichieu().getphut() << endl;
         o << (*(danhsachphim + i)).getkhoichieu().getgio() << endl;
@@ -129,9 +100,7 @@ void maychu::updatedanhsachphim(string name_file) {
         o << (*(danhsachphim + i)).getkhoichieu().getthang() << endl;
         o << (*(danhsachphim + i)).getkhoichieu().getnam() << endl;
         o << (*(danhsachphim + i)).getthoiluong() << endl;
-        o << (*(danhsachphim + i)).getngonngu() << endl;
         o << (*(danhsachphim + i)).getgioithieuphim() << endl;
-        o << (*(danhsachphim + i)).getage() << endl;
     }
     o.close();
 

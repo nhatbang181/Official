@@ -7,34 +7,25 @@ phim::phim() {
 phim::~phim() {}
 string phim::getid() { return this->id; }
 string phim::gettenphim() { return this->tenphim; };
-string phim::getdaodien() { return this->daodien; };
 string phim::gettheloai() { return this->theloai; };
 Time phim::getkhoichieu() { return this->khoichieu; };
 Time phim::gethankhoichieu() { return this->hankhoichieu; };
 int phim::getthoiluong() { return this->thoiluong; };
-string phim::getngonngu() { return this->ngonngu; };
 string phim::getgioithieuphim() { return this->gioithieuphim; };
-string phim::getage() { return this->age; };
 int phim::getsosuatchieu() { return this->sosuatchieu; }
 suatchieu* phim::getdanhsachsuatchieu() { return this->danhsachsuatchieu; }
-string phim::getdienvien() {
-    return dienvien;
-}
+
 phim phim::operator=(phim p)
 {
     this->id = p.id;
     this->tenphim = p.tenphim;
-    this->daodien = p.daodien;
     this->theloai = p.theloai;
     this->khoichieu = p.khoichieu;
     this->hankhoichieu = p.hankhoichieu;
     this->thoiluong = p.thoiluong;
-    this->ngonngu = p.ngonngu;
     this->gioithieuphim = p.gioithieuphim;
-    this->age = p.age;
     this->danhsachsuatchieu = p.danhsachsuatchieu;
     this->sosuatchieu = p.sosuatchieu;
-    this->dienvien = p.dienvien;
     return (*this);
 }
 
@@ -85,7 +76,6 @@ void phim::sethankhoichieu()
 istream& operator>>(istream& i, phim& p)
 {
     getline(i, p.tenphim);
-    getline(i, p.daodien);
     getline(i, p.theloai);
     int tmp;
     i >> tmp;
@@ -107,11 +97,8 @@ istream& operator>>(istream& i, phim& p)
     p.sethankhoichieu();
     i >> p.thoiluong;
     i.ignore();
-    getline(i, p.ngonngu);
     getline(i, p.gioithieuphim);
-    i >> p.age;
     i.ignore();
-    getline(i, p.daodien);
     return i;
 }
 
@@ -119,7 +106,7 @@ bool phim::operator==(phim p)
 {
 
 
-    if (p.daodien == daodien && p.tenphim == tenphim && p.hankhoichieu == this->hankhoichieu && p.daodien == daodien && p.theloai == theloai && p.khoichieu == khoichieu && p.thoiluong == thoiluong && p.ngonngu == ngonngu && p.gioithieuphim == gioithieuphim && p.age == age && p.sosuatchieu == sosuatchieu)
+    if (p.tenphim == tenphim && p.hankhoichieu == this->hankhoichieu && p.theloai == theloai && p.khoichieu == khoichieu && p.thoiluong == thoiluong && p.gioithieuphim == gioithieuphim && p.sosuatchieu == sosuatchieu)
         return true;
     else
         return false;
@@ -128,15 +115,11 @@ ostream& operator<<(ostream& o, phim p)
 {
     o << p.id << endl;
     o << p.tenphim << endl;
-    o << p.daodien << endl;
     o << p.theloai << endl;
     o << p.khoichieu;
     o << p.hankhoichieu;
     o << p.thoiluong << endl;
-    o << p.ngonngu << endl;
     o << p.gioithieuphim << endl;
-    o << p.age << endl;
-    o << p.dienvien << endl;
     return o;
 }
 phim* phim::getcontrophim() {
